@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Beadando</title>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+<link rel="stylesheet" href="CSS/calc.css" type="text/css" />
+
+<script type="text/javascript">
+function checkform() {
+	var egysegek = new Array(17);
+	var isFormOK = 1;
+	
+	for(i = 0; i < egysegek.length; i++) {
+		egysegek[i] = document.getElementById(i).value;
+		if(egysegek[i] < 0) {
+			isFormOK = 0;
+		}
+	}
+	
+	if(isFormOK) {
+		var mineral_ert = mineral(egysegek);
+		var gas_ert = gas(egysegek);
+		var str = 'Mineral: ' + mineral_ert + '\n' + 'Gas: ' + gas_ert;
+		alert(str);
+	}
+}
+
+function mineral(tomb) {
+	var eredmeny=0;
+	var nyers_m = [50, 100, 25, 150, 75, 25, 50, 50, 100, 50, 100, 200, 100, 150, 100, 150, 300];
+	for(i = 0; i < tomb.length; i++) {
+		eredmeny += tomb[i]*nyers_m[i];
+	}
+	return eredmeny;
+}
+
+function gas(tomb) {
+	var eredmeny=0;
+	var nyers_g = [0, 0, 0, 0, 25, 75, 25, 50, 50, 100, 150, 100, 100, 100, 200, 150, 200];
+	for(i = 0; i < tomb.length; i++) {
+		eredmeny += tomb[i]*nyers_g[i];
+	}
+	return eredmeny;
+}
+</script>
+
+</head>
+<body>
+
+<div id="fejresz">
+	<div id="felso">
+		<div id="banner_zerg"></div>
+	</div>
+	<div id="also">
+		<div id="menusor">
+			<ul>
+				<li><a href="index.html">Főoldal</a></li>
+				<li><a href="fajok.html">Fajok</a></li>
+				<li><a href="egysegek.html">Hősök</a></li>
+				<li><a href="calc.html">Kalkulátor</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="calc_resz">
+	<table>
+		<tr>
+			<td>Drone</td>
+			<td><input type="text" name="Drone" id="0"/></td>
+			<td>Overlord</td>
+			<td><input type="text" name="Overlord" id="1"/></td>
+			<td>Zergling</td>
+			<td><input type="text" name="Zergling" id="2"/></td>
+		</tr>
+		<tr>
+			<td>Queen</td>
+			<td><input type="text" name="Queen" id="3"/></td>
+			<td>Roach</td>
+			<td><input type="text" name="Roach" id="4"/></td>
+			<td>Ravager</td>
+			<td><input type="text" name="Ravager" id="5"/></td>
+		</tr>
+		<tr>
+			<td>Baneling</td>
+			<td><input type="text" name="Baneling" id="6"/></td>
+			<td>Overseer</td>
+			<td><input type="text" name="Overseer" id="7"/></td>
+			<td>Hydralisk</td>
+			<td><input type="text" name="Hydralisk" id="8"/></td>
+		</tr>
+		<tr>
+			<td>Lurker</td>
+			<td><input type="text" name="Lurker" id="9"/></td>
+			<td>Infestor</td>
+			<td><input type="text" name="Infestor" id="10"/></td>
+			<td>Swarm Host</td>
+			<td><input type="text" name="Swarm Host" id="11"/></td>
+		</tr>
+		<tr>
+			<td>Mutalisk</td>
+			<td><input type="text" name="Mutalisk" id="12"/></td>
+			<td>Corruptor</td>
+			<td><input type="text" name="Corruptor" id="13"/></td>
+			<td>Viper</td>
+			<td><input type="text" name="Viper" id="14"/></td>
+		</tr>
+		<tr>
+			<td>Brood Lord</td>
+			<td><input type="text" name="Brood Lord" id="15"/></td>
+			<td>Ultralisk</td>
+			<td><input type="text" name="Ultralisk" id="16"/></td>
+			<td colspan="2"><input type="button" value="Submit" onclick = "checkform();"></td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

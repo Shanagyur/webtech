@@ -1,0 +1,166 @@
+<style type ="text/css">
+
+body {}
+
+#tassadar{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette4.wikia.nocookie.net/starcraft/images/8/87/Tassadar_SC1_CineDeathOvermind2.jpg/revision/latest/window-crop/width/130/x-offset/124/y-offset/0/window-width/340/window-height/300?cb=20100810032849");
+}
+
+#artanis{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette3.wikia.nocookie.net/starcraft/images/a/ad/Artanis_SC2-LotV_Head3.png/revision/latest?cb=20151111063947");
+}
+
+#brakk{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette4.wikia.nocookie.net/starcraft/images/5/5e/Brakk_SC2-HoTS_Head1.jpg/revision/latest/scale-to-width-down/150?cb=20151205225044");
+}
+
+#dehaka{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("https://i.ytimg.com/vi/TH9qg1_QROs/maxresdefault.jpg");
+}
+
+#tychus{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://realgamernewz.com/wp-content/uploads/2014/03/starcraft-2-tychus.jpg");
+}
+
+#jim{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette4.wikia.nocookie.net/starcraft/images/a/ad/JimRaynor_SC2_Head2.jpg/revision/latest/scale-to-width-down/254?cb=20151129213613");
+}
+
+#zeratul{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette1.wikia.nocookie.net/starcraft/images/2/21/Zeratul_SC2_Story1.jpg/revision/latest?cb=20100717001230");
+}
+
+#karax{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette3.wikia.nocookie.net/starcraft/images/b/bf/Karax_SC2-LotV_Portrait.jpg/revision/latest?cb=20151206063621");
+}
+
+#kerrigen{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("https://i.ytimg.com/vi/wj2Jwe_QkwM/maxresdefault.jpg");
+}
+
+#kraith{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette3.wikia.nocookie.net/starcraft/images/c/c8/Mitoscarab_SC2-HotS_Head1.jpg/revision/latest/scale-to-width-down/150?cb=20151205221904");
+}
+
+#egon{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://static.tvtropes.org/pmwiki/pub/images/200px-EgonStetmann_SC2_Head1_7851.jpg");
+}
+
+#rory{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette3.wikia.nocookie.net/starcraft/images/b/b1/RorySwann_SC2_Head2.jpg/revision/latest?cb=20100810065254");
+}
+
+#vorazun{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette1.wikia.nocookie.net/starcraft/images/1/1e/Vorazun_SC2-LotV_Portrait.jpg/revision/latest?cb=20160112175931");
+}
+
+#talandar{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette3.wikia.nocookie.net/starcraft/images/7/7d/Talandar_SC2-LotV_Head2.jpg/revision/latest?cb=20151206090434");
+}
+
+#stukov{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("https://i.ytimg.com/vi/JPj70yn3ku4/maxresdefault.jpg");
+}
+
+#zurvan{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette3.wikia.nocookie.net/starcraft/images/7/7d/Zurvan_SC2-HotS_Art1.jpg/revision/latest?cb=20130418231534");
+}
+
+#nova{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("https://dvsgaming.org/wp-content/uploads/2016/03/SC2-Nova-960x540.jpg");
+}
+
+#horace{
+	margin: auto;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url("http://vignette3.wikia.nocookie.net/starcraft/images/c/c4/HoraceWarfield_SC2_Cncpt2.jpg/revision/latest?cb=20101007211232");
+}
+</style>

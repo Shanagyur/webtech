@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Beadando</title>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+<link rel="stylesheet" href="CSS/calc.css" type="text/css" />
+
+<script type="text/javascript">
+function checkform() {
+	var egysegek = new Array(20);
+	var isFormOK = 1;
+	
+	for(i = 0; i < egysegek.length; i++) {
+		egysegek[i] = document.getElementById(i).value;
+		if(egysegek[i] < 0) {
+			isFormOK = 0;
+		}
+	}
+	
+	if(isFormOK) {
+		var mineral_ert = mineral(egysegek);
+		var gas_ert = gas(egysegek);
+		var str = 'Mineral: ' + mineral_ert + '\n' + 'Gas: ' + gas_ert;
+		alert(str);
+	}
+}
+
+function mineral(tomb) {
+	var eredmeny=0;
+	var nyers_m = [50, 100, 50, 125, 100, 100, 50, 125, 0, 25, 200, 250, 150, 150, 250, 300, 150, 300, 350, 400];
+	for(i = 0; i < tomb.length; i++) {
+		eredmeny += tomb[i]*nyers_m[i];
+	}
+	return eredmeny;
+}
+
+function gas(tomb) {
+	var eredmeny=0;
+	var nyers_g = [0, 0, 100, 50, 25, 100, 150, 125, 0, 75, 0, 100, 100, 150, 150, 200, 150, 200, 250, 400];
+	for(i = 0; i < tomb.length; i++) {
+		eredmeny += tomb[i]*nyers_g[i];
+	}
+	return eredmeny;
+}
+</script>
+
+
+</head>
+<body>
+
+<div id="fejresz">
+	<div id="felso">
+		<div id="banner_protoss"></div>
+	</div>
+	<div id="also">
+		<div id="menusor">
+			<ul>
+				<li><a href="index.html">Főoldal</a></li>
+				<li><a href="fajok.html">Fajok</a></li>
+				<li><a href="egysegek.html">Hősök</a></li>
+				<li><a href="calc.html">Kalkulátor</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="calc_resz">
+	<table>
+		<tr>
+			<td>Probe</td>
+			<td><input type="text" name="Probe" id="0"/></td>
+			<td>Zealot</td>
+			<td><input type="text" name="Zealot" id="1"/></td>
+			<td>Sentry</td>
+			<td><input type="text" name="Sentry" id="2"/></td>
+		</tr>
+		<tr>
+			<td>Stalker</td>
+			<td><input type="text" name="Stalker" id="3"/></td>
+			<td>Adept</td>
+			<td><input type="text" name="Adept" id="4"/></td>
+			<td>Mothership Core</td>
+			<td><input type="text" name="Mothership Core" id="5"/></td>
+		</tr>
+		<tr>
+			<td>High Templar</td>
+			<td><input type="text" name="High Templar" id="6"/></td>
+			<td>Dark Templar</td>
+			<td><input type="text" name="Dark Templar" id="7"/></td>
+			<td>Archon</td>
+			<td><input type="text" name="Archon" id="8"/></td>
+		</tr>
+		<tr>
+			<td>Observer</td>
+			<td><input type="text" name="Observer" id="9"/></td>
+			<td>Warp Prism</td>
+			<td><input type="text" name="Warp Prism" id="10"/></td>
+			<td>Immortal</td>
+			<td><input type="text" name="Immortal" id="11"/></td>
+		</tr>
+		<tr>
+			<td>Phoenix</td>
+			<td><input type="text" name="Phoenix" id="12"/></td>
+			<td>Oracle</td>
+			<td><input type="text" name="Oracle" id="13"/></td>
+			<td>Void Ray</td>
+			<td><input type="text" name="Void Ray" id="14"/></td>
+		</tr>
+		<tr>
+			<td>Colossus</td>
+			<td><input type="text" name="Colossus" id="15"/></td>
+			<td>Disruptor</td>
+			<td><input type="text" name="Disruptor" id="16"/></td>
+			<td>Tempest</td>
+			<td><input type="text" name="Tempest" id="17"/></td>
+		</tr>
+		<tr>
+			<td>Carrier</td>
+			<td><input type="text" name="Carrier" id="18"/></td>
+			<td>Mothership</td>
+			<td><input type="text" name="Mothership" id="19"/></td>
+			<td colspan="2"><input type="button" value="Submit" onclick = "checkform();"></td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>

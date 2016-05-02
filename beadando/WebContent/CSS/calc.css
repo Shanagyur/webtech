@@ -1,0 +1,29 @@
+<style type ="text/css">
+
+body {}
+
+#banner_zerg {
+	margin: auto;
+	width: 100%;
+	min-height: 200px;
+	background-image: url("http://static.eclypsia.com/public/upload/cke/Articles/SC2/Packs%20HotS/HotS_zerg_logo_banner.jpg");
+	background-size: 100% 200px;
+}
+
+#banner_protoss {
+	margin: auto;
+	width: 100%;
+	min-height: 200px;
+	background-image: url("http://8gmwp015fo-flywheel.netdna-ssl.com/wp-content/uploads/sites/6/2015/10/Artanis-Banner.png");
+	background-size: 100% 200px;
+}
+
+#banner_terran {
+	margin: auto;
+	width: 100%;
+	min-height: 200px;
+	background-image: url("https://codeswholesale.com/wp-content/uploads/2014/08/starcraft2-banner.jpg");
+	background-size: 100% 200px;
+}
+
+</style>
