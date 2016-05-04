@@ -5,6 +5,20 @@
 <title>Beadando</title>
 
 <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+<link rel="stylesheet" href="CSS/heroes.css" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#menusor li a').each(function() {
+			$(this).click(function(event) {
+				event.preventDefault();
+				$('#tartalom').load($(this).attr('href'));
+			});
+		});
+	});
+</script>
 
 </head>
 <body>
@@ -16,7 +30,7 @@
 	<div id="also">
 		<div id="menusor">
 			<ul>
-				<li><a href="index.html">Főoldal</a></li>
+				<li><a href="mainPage.html">Főoldal</a></li>
 				<li><a href="fajok.html">Fajok</a></li>
 				<li><a href="egysegek.html">Hősök</a></li>
 				<li><a href="calc.html">Kalkulátor</a></li>
@@ -24,13 +38,8 @@
 		</div>
 	</div>
 </div>
+<div id="tartalom"></div>
 
-<table>
-	<tr>
-		<th><a href="fajok.html"><div id="protoss"></div></a></th>
-		<th><a href="fajok.html"><div id="zerg"></div></a></th>
-		<th><a href="fajok.html"><div id="terran"></div></a></th>
-	</tr>
-</table>
+
 </body>
 </html>
