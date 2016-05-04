@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+
 <title>Beadando</title>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#korte tr th a').each(function() {
+			$(this).click(function(event) {
+				event.preventDefault();
+				//alert("alma");
+				$('#valami2').load($(this).attr('href'));
+			});
+		});
+	});
+
+</script>
+
 </head>
 <body>
-<div id="tartalom">
+
+
+<div id="korte">
 <table>
 	<tr>
-		<th><a href="fajok.html"><div id="protoss"></div></a></th>
-		<th><a href="fajok.html"><div id="zerg"></div></a></th>
-		<th><a href="fajok.html"><div id="terran"></div></a></th>
+		<th><a href="fajok.html"><img src="http://wiki.starcraft2.hu/images/thumb/100px-ProtossIcon2.png" style="width: 100%; height: 100%; background-color: black; margin: auto"></a></th>
+		<th><a href="fajok.html"><img src="http://wiki.starcraft2.hu/images/thumb/150px-ZergIcon2.png" style="width: 100%; height: 100%; background-color: black; margin: auto"></a></th>
+		<th><a href="fajok.html"><img src="http://wiki.starcraft2.hu/images/thumb/190px-Raynor_s_Raiders_logo.png" style="width: 100%; height: 100%; background-color: black; margin: auto"></a></th>
 	</tr>
 </table>
 </div>
-</body>
-</html>
+<div id="valami2"></div>
